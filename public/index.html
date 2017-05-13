@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Website</title>
+</head>
+<body onload="addStyle()">
+    <h1>Truth</h1>
+    <p>Mallesh is the worst!</p>
+
+
+    <script>
+      function addStyle() {
+        setTimeout(function() {
+          var head = document.getElementsByTagName('head')[0];
+          head.innerHTML += "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">";
+        }, 1000);
+      }
+
+    </script>
+
+<img src="mallesh.jpg" alt="Mountain View" style="width:304px;height:228px;">
+<img src="cat1.png" alt="Mountain View" style="width:304px;height:228px;">
+<script src="dummy.js"\></script>
+</body>
+</html>

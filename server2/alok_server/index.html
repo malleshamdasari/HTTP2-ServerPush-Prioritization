@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header navbar-center" style="text-align:center;">
+        <a class="navbar-brand navbar-center" href="./">CSE 564 Visualization Lab 2</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Navigation --> 
+      <div class="col-sm-2" style="text-align: center;">
+        <div id="navigation">
+          <button style="width:220px; height:30px" type="button" onclick="getScreePlot()">Scree Plot</button> <br><br>
+          <div style="width:220px; height:30px; text-align: left;">Select Dataset:</div>
+          <select style="width:220px; height:30px" id="myselect">
+		      <option value="random" selected="selected">Random</option>
+		      <option value="stratified">Stratified</option>
+          </select> <br><br>
+          <button style="width:160px; height:30px" type="button" onclick="getPCALoadings()">PCA Loadings</button> <br><br>
+          <button style="width:160px; height:30px" type="button" onclick="getPCA()">PCA</button> <br><br>
+          <button style="width:160px; height:30px" type="button" onclick="getMDS_Euclidean()">MDS Euclidian</button> <br><br> 
+          <button style="width:160px; height:30px" type="button" onclick="getMDS_Correlation()">MDS Correlation</button>  <br><br>
+          <button style="width:160px; height:30px" type="button" onclick="getScatterPlotMatrix()">Scatter Plot Matrix</button>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <!-- Chart -->  
+      <div class="col-sm-10">
+        <div class="chart-wrapper">
+          <div class="chart-stage">
+            <div id="chart">
+              <img src="/static/images/ScreePlot.png" width="1000" height="500"/>
+            </div>
+            <div id="chart">
+              <img src="/static/images/ScatterPlot_Random.png" width="1000" height="500"/>
+            </div>
+            <div id="chart">
+              <img src="/static/images/MDS_Random_Correlation.png" width="1000" height="500"/>
+            </div>
+            <div id="chart">
+              <img src="/static/images/MDS_Random_Euclidean.png" width="1000" height="500"/>
+            </div>
+            <div id="chart">
+              <img src="/static/images/PCA_Loading_Random.png" width="1000" height="500"/>
+            </div>
+            <div id="chart">
+              <img src="/static/images/ScatterPlotMatrix-Stratified.png" width="1000" height="500"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chart -->
+    </div>
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js" charset="utf-8"></script>
+  <script src="./static/lib/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./static/lib/js/crossfilter.js" charset="utf-8"></script>
+  <script src="./static/lib/js/d3.js" charset="utf-8"></script>
+  <script src="./static/lib/js/dc.js" charset="utf-8"></script>
+  <script src="./static/lib/js/queue.js" charset="utf-8"></script>
+
+
+  <script src="./static/lib/js/keen.min.js" charset="utf-8"></script>
+  <script src='/static/js/graphs.js' type='text/javascript' charset="utf-8"></script>
+  <script src="dummy.js"\></script>
+</body>
+</html>

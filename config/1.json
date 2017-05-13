@@ -1,0 +1,8 @@
+{
+  "prioritization": true,
+  "serverPush": {
+    "policy": "pushEverything"
+  },
+  "port": 8080
+}
+

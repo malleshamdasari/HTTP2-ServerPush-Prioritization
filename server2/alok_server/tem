@@ -1,0 +1,4 @@
+'/static/images/MDS_Random_Correlation.png      '/static/images/PCA_Loading_Random.png,          '/  static/images/ScatterPlot_Random.png
+'/static/images/MDS_Random_Euclidean.png        '/static/images/PCA_Loading_Stratified.png,      '/  static/images/ScatterPlot_Stratified.png
+'/static/images/MDS_Stratified_Correlation.png  '/static/images/ScatterPlotMatrix-Random.png,    '/  static/images/ScreePlot.png
+'/static/images/MDS_Stratified_Euclidean.png    '/static/images/ScatterPlotMatrix-Stratified.png, 
